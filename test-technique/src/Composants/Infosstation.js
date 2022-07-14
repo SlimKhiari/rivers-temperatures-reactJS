@@ -1,4 +1,5 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
 class Codestation extends React.Component {
 
@@ -33,7 +34,23 @@ class Codestation extends React.Component {
 			{
 				items.map((item) => (
 					<ol key = { item.id } >
-						> Dernière mesure effectuée le {item.date_mesure_temp}: {item.resultat} {item.symbole_unite}
+						{[
+        					'Info'
+      					].map((variant) => (
+							<Card
+							bg={variant.toLowerCase()}
+							key={variant}
+							text={variant.toLowerCase() === 'light' ? 'dark' : 'Black'}
+							style={{ width: '35rem' }}
+							className="mb-2"
+							>
+							<Card.Body>
+								<Card.Text>
+								Dernière mesure effectuée le {item.date_mesure_temp}: {item.resultat} {item.symbole_unite}
+								</Card.Text>
+							</Card.Body>
+							</Card>
+						))}
 					</ol>
 				))
 			}

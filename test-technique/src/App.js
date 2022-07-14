@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
-import Codestation from './Composants/Codestation'
+import Codestation from './Composants/Infosstation'
+import Table from 'react-bootstrap/Table';
 
 class App extends React.Component {
 
@@ -33,14 +34,22 @@ class App extends React.Component {
 		<div className = "App">
 			<center> Test Technique In System - Slim Khiari - 14 Juillet 2022</center> <hr/>
 			
-			<h1><center className="titre">Les stations situées à la Gironde - prise de températures des cours d'eau - office de tourisme</center> </h1><hr/>
-		
-			{
-				items.map((item) => (
-					<h2>{item.libelle_station}
-					<Codestation codeStation={item.code_station}></Codestation></h2>
-				))
-			}
+			<h1><center>Les stations situées à la Gironde - prise de températures des cours d'eau - office de tourisme</center> </h1><hr/>
+			<Table striped bordered hover>
+				<thead>
+				
+					<th>Code de la station</th>
+					<th>Libellé de la station</th>
+					<th>Température</th>
+					{
+						items.map((item) => (
+							<tr> <td>{item.code_station}</td>
+							<td>{item.libelle_station}</td>
+							<td><Codestation codeStation={item.code_station}></Codestation></td></tr>
+						))
+					}
+				</thead>
+			</Table>
 		</div>
 	);
 }
