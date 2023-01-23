@@ -1,17 +1,18 @@
-# Test Technique In System
+# Technical Test - React JS
 
-## Description 
-Il vous est demandé de réaliser une interface web, pouvant par exemple être affichée sur un écran dans un office de tourisme, permettant de consulter les derniers relevés de température des cours d'eau du département de la Gironde.
+## Description
+You are asked to create a web interface, which can for example be displayed on a screen in a tourist office, allowing you to consult the latest temperature readings of the rivers of the Gironde department.
 
-L'interface se doit d'être lisible et facilement compréhensible.
+The interface must be readable and easily understandable.
 
-### Optionnel 
-Posibilité d'ajouter des graphiques permettant de consulter les variations des températures d'un cours d'eau sur une période sélectionée.
+### Optional
+Possibility of adding graphs allowing to consult the variations of the temperatures of a river over a selected period.
 
 ## API
-Vous devrez, pour les données, utiliser l'API:
+You will need, for data, to use the API:
 
- ``` Hubeau - TEMPÉRATURE DES COURS D'EAU ``` (https://hubeau.eaufrance.fr/page/api-temperature-continu#/).
+ ``` Hubeau - RIVER TEMPERATURE ``` (https://hubeau.eaufrance.fr/page/api-temperature-continu#/).
 
 
-La console de l'API sur le site rencontre quelques soucis, il est donc conseillé d'utiliser une autre plateforme pour tester l'API.
+The API console on the site has some problems, so it is advisable to use another platform to test the API.
+
