@@ -1,4 +1,4 @@
-# Technical Test - React JS
+# Technical Test - React JS - the test instruction
 
 ## Description
 You are asked to create a web interface, which can for example be displayed on a screen in a tourist office, allowing you to consult the latest temperature readings of the rivers of the Gironde department.
